@@ -1,0 +1,340 @@
+/*FUENTE*/
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+  </style>
+
+
+/* HEADER */
+.menu{
+    background-image: ;
+    background-color: #f0f0f0;
+    /* Ajustamos el border-bottom para que el color sea visible (no #ccc) */
+    border-bottom: 2px solid #ddd; 
+    padding: 10px 20px; /* Añadir padding para móviles */
+}
+
+.logo{
+    text-align: center;
+    padding-top: 20px; /* Reducir el padding de 50px para ahorrar espacio en móvil */
+}
+
+/* NAV: Estilos para el contenedor */
+/*
+====================================
+ESTILOS GLOBALES Y CONTENEDOR PRINCIPAL
+====================================
+*/
+.main-nav {
+    /* 1. LAYOUT PRINCIPAL: Apila y Centra */
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Apila el logo y el menú verticalmente */
+    align-items: center;    /* Centra el logo y el menú horizontalmente */
+    position: relative;     /* Necesario para posicionar el CTA de forma absoluta */
+
+    padding: 20px 0;
+    background-color: #FFFFFF; /* Fondo blanco (Limpieza) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil y profesional */
+    font-family: Arial, sans-serif; /* Fuente base */
+}
+
+/* 2. LOGO */
+.logo {
+    margin-bottom: 15px; /* Espacio entre el logo y el menú */
+}
+
+/*
+====================================
+Inicio
+====================================
+*/
+
+.texto-inicio {
+    width: 100%;
+    text-align: center;
+    font-family: 'Open+SansM,Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    text-shadow: #ccc;
+    }
+
+.back-img {
+    width: 100%;
+    background-image: url(../Media/img/img-back2.png);
+    filter: opacity(90%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
+
+/*
+====================================
+ENLACES DE NAVEGACIÓN
+====================================
+*/
+
+.nav-links {
+    
+    list-style: none;
+    display: flex;        /* Coloca los ítems de lista horizontalmente */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    width: 100%;
+    margin: 0 18px;
+}
+
+.nav-links a {
+    width: 100%;
+    text-decoration: none;
+    color: #333333; /* Gris oscuro para buena legibilidad */
+    font-weight: 500;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #56cbe9; /* Acento azul (Confianza) al pasar el ratón */
+}
+
+/*
+====================================
+MENÚ DESPLEGABLE INICIO (DROPDOWN)
+====================================
+*/
+.dropdown-inicio {
+    position: relative;
+}
+
+.dropdown-content-inicio {
+    width: 100%;
+    display: none; /* OCULTAR por defecto */
+    position: absolute;
+    top: 100%; /* Colocar debajo del enlace principal */
+    left: 90%;
+    transform: translateX(-40%); /* Centrar el dropdown bajo el enlace */
+
+    background-color: #FFFFFF;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.dropdown-inicio:hover .dropdown-content-inicio {
+    
+    display: block; /* MOSTRAR al pasar el ratón */
+}
+
+.dropdown-content-inicio li {
+    
+    margin: 0;
+}
+
+.dropdown-content-inicio a {
+    width: 100%;
+    color: #333333;
+    padding: 8px 15px;
+    display: block; /* Permite que el padding funcione en toda el área */
+    font-weight: normal;
+}
+
+.dropdown-content-inicio a:hover {
+    width: 100%;
+    background-color: #f5f5f500; /* Gris claro en el fondo del ítem */
+    color: #26edfc; /* Mantiene el acento al interactuar */
+}
+
+/*
+====================================
+MENÚ DESPLEGABLE (DROPDOWN)
+====================================
+*/
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    width: 100%;
+    display: none; /* OCULTAR por defecto */
+    position: absolute;
+    top: 100%; /* Colocar debajo del enlace principal */
+    left: 60%;
+    transform: translateX(-40%); /* Centrar el dropdown bajo el enlace */
+
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    
+    display: block; /* MOSTRAR al pasar el ratón */
+}
+
+.dropdown-content li {
+    
+    margin: 0;
+}
+
+.dropdown-content a {
+    width: 100%;
+    color: #333333;
+    padding: 8px 15px;
+    display: block; /* Permite que el padding funcione en toda el área */
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    width: 100%;
+    background-color: #f5f5f500; /* Gris claro en el fondo del ítem */
+    color: #26edfc; /* Mantiene el acento al interactuar */
+}
+
+
+
+.imagen-card {
+    text-align: center;
+    width: 100%; 
+    height: auto; 
+    max-width: 150px; /* Por ejemplo, para que el icono no sea tan grande */
+    display: block; /* Ayuda a controlar mejor los márgenes */
+    margin: 0 auto; /* Centra la imagen dentro de la tarjeta */
+    padding: 0;
+}
+
+/*PRODUCTOS*/
+.productos{
+   width: 100%;
+    color: black;
+    padding: 10px;
+    border-bottom: 2px solid;
+}
+.titulo-productos{
+    border-top: #777777 2px solid;
+    border-bottom: #777777 2px solid;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    ;
+    
+}
+.prod-container {
+   width: 100%;
+   display: flex;
+   justify-content: space-around; 
+   flex-wrap: wrap;
+   gap: 25px 15px;
+}
+
+.prod-item{
+    border: solid rgb(193, 193, 199);
+    border-radius: 8px;
+    padding: 8px;
+
+}
+.item-tit{
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    ;
+    margin: 8px auto ;
+}
+.imagen-card{
+    text-align: center;
+
+}
+.precio {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    margin: auto 8px;
+    padding: 0px;
+
+}
+
+.oferta{
+    color: red;
+}
+
+.descripcion{
+    color: black;
+    width:280px
+}
+
+.botonera{
+    text-align: center;
+}
+
+.boton-agregar{
+    background-color: rgb(219, 217, 217);
+    border-radius: 5px;
+}
+.boton-agregar:hover{
+        background-color: rgb(87, 86, 86);
+    font-size: 15px;
+}
+
+/*UBICACION*/
+.ubi{
+    text-align: center;
+    background-color: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/*MAPA*/
+.mapa {
+    
+    text-align: center;
+    width: 100%;
+    height: 320px;
+   
+    
+
+}
+
+.contact {
+    width: 100%;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(219, 217, 217);
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    
+}
+
+footer {
+  /* 1. Cambiar el color de fondo a gris */
+  width: 100%;
+  text-align: center;
+  background-color: #f0f0f0; /* Un gris claro y común */
+
+  /* 2. Añadir una línea de separación en la parte superior */
+  /* El formato es: grosor | estilo | color */
+  border-top: 2px solid #ccc; /* 2px de grosor, línea sólida, color gris medio */
+
+  /* 3. (Opcional pero recomendado) Añadir un poco de espacio */
+  padding: 15px;
+}
+.tabla{
+    display: flex;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 5px;
+}
