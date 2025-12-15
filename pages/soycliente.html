@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Soporte Tecnico JMP</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+    
+</head>
+<body>
+    <header class="menu">
+       
+<nav class="main-nav">
+    <div class="logo">
+        <img src="../Media/img/STJMP.png" alt="Logo" width="200">
+    </div>
+
+    <ul class="nav-links">
+        <li class="dropdown-inicio">       
+             <a href="#home">Inicio</a>
+             <ul class="dropdown-content-inicio">
+                <li><a href="#Contacto">Contactanos</a></li>
+                <li><a href="#Ubicacion">Ubicacion</a></li>
+                <li><a href="#formulario">Formulario Consultas</a></li>
+            </ul>
+        </li> 
+        
+        <li class="dropdown">
+            <a href="#servicios">Servicios</a>
+            <ul class="dropdown-content">
+                <li><a href="#Productos">Productos</a></li>
+                <li><a href="pages/hogar.html">Hogar</a></li>
+                <li><a href="pages/empresas.html">Empresas</a></li>
+                <li><a href="gaming">Gaming</a></li>
+                <li><a href="pages/Infraestructura.html">Infraestructura</a></li>
+                <li><a href="pages/seguridad.html">Seguridad</a></li>
+                <li><a href="pages/camaras.html">Camaras</a></li>
+             </ul>
+        </li>
+        <li class="dropdown">
+            <a href="../index.html">Volver</a>
+        </li>
+        
+    </ul>
+   
+</nav>
+
+    <style>
+        .error {
+            color: red;
+            display: none;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <section>
+
+            <!-- Contenedores de errores -->
+            <div id="empty_email" class="error"></div>
+            <div id="empty_pass" class="error"></div>
+            <div id="email_error" class="error"></div>
+            <div id="pass_error" class="error"></div>
+
+            <form id="form_login" novalidate>
+                
+                <input id="id_email" type="email" placeholder="Ingrese su email"><br><br>
+
+                <input id="id_pass" type="password" placeholder="Ingresar contraseña"><br><br>
+
+                <button id="btn_login" type="button">Ingresar</button>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- Ruta corregida (ajustala si tu carpeta real es distinta) -->
+    <script src="/Talento-lab/Js/soycliente.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 1</title>
+</head>
+<body>
+    
+    <div id="demo"></div>
+
+    <!--
+        1. Le pedimos al usuario dos numeros usando promt().
+        2. Convertir esos datos a enteros usando parseInt().
+        3. Verificar con isNaN() si los datos ingresados son validos para evitar errores.
+        4. Mostrar los resultados de suma, resta , multiplicacion y division del modulo.
+-->
+        <script>//Ejercicio2
+
+  
+    // Pide que el usuario ingrese nombre y edad
+    let nombre = prompt("Ingrese su nombre");
+    let edad = prompt("Ingrese su edad");
+
+    // Muestra en la consola qué tipo de dato es cada variable
+    // NOTA: prompt siempre devuelve un string (cadena de texto)
+    console.log( "Tipo de dato de 'nombre': " + typeof nombre );
+    console.log( "Tipo de dato de 'edad' antes de parseInt: " + typeof edad );
+
+    // Convierte 'edad' a número entero.
+    let age = parseInt(edad);
+    
+    // Simplificación: no es necesario crear una variable 'majoredad'
+    const EDAD_MAYOR = 18; 
+    
+    // Se recomienda validar que la entrada sea un número válido antes de comparar
+    if (isNaN(age)) {
+        console.log("Error: La edad ingresada no es un número válido.");
+        alert("Error: Por favor, ingrese una edad numérica válida.");
+    } 
+    // Corrección principal: Se usa 'if (condicion)'
+    else if (age >= EDAD_MAYOR) {
+        console.log("El usuario " + nombre + " es Mayor de edad");
+        alert("El usuario " + nombre + " es Mayor de edad");
+    } 
+    // Bloque 'else' si la edad es un número, pero menor que EDAD_MAYOR
+    else { 
+        console.log("El usuario " + nombre + " es menor de edad");
+        alert("El usuario " + nombre + " es menor de edad");
+    }
+
+        </script>
+
+</body>
+</html>
